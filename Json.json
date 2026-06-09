@@ -1,0 +1,53 @@
+
+[
+    {
+        "id": 1,
+        "produto": "fogao",
+        "preco": 3500
+    },
+    {
+        "id": 2,
+        "produto": "ferro de passar",
+        "preco": 120
+    },
+    {
+        "id": 3,
+        "produto": "liquidificador",
+        "preco": 250
+    },
+    {
+        "id": 4,
+        "produto": "mesa",
+        "preco": 900
+    },
+    {
+        "id": 5,
+        "produto": "geladeira",
+        "preco": 2200
+    },
+    {
+        "id": 6,
+        "produto": "microondas",
+        "preco": 1800
+    },
+    {
+        "id": 7,
+        "produto": "armario",
+        "preco": 700
+    },
+    {
+        "id": 8,
+        "produto": "sofa",
+        "preco": 300
+    },
+    {
+        "id": 9,
+        "produto": "mop",
+        "preco": 150
+    },
+    {
+        "id": 10,
+        "produto": "panelas",
+        "preco": 400
+    }
+]

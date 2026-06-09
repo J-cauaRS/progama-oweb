@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    var nome = [];
+    var numero = [1, 2, 3, 10, 15, 20, 100];
+
+
+    // Push
+    // Adiciona nomes
+
+    nome.push("Cida");
+    nome.push("Caua");
+    nome.push("Eloa");
+    nome.push("Dasmim");
+    nome.push("Israel");
+    nome.push("Carla");
+    nome.push("Joana");
+    nome.push("Carolina");
+    nome.push("Samanta");
+
+
+    // Pop
+    // Remove os últimos itens
+
+    nome.pop();
+    nome.pop();
+    nome.pop();
+
+
+    // Sort
+    // Ordena os nomes
+
+    nome.sort();
+
+
+    // Reduce
+
+    var total = numero.reduce((acumulador, valorAtual) => {
+
+        return acumulador + valorAtual;
+
+    }, 0);
+
+
+    // Foreach
+
+    nome.forEach((cadaNome) => {
+
+        document.write(cadaNome + "<br>");
+
+    });
+
+
+    document.write("<hr>");
+
+
+    // Filter
+    // Filtra nomes maiores que 4 letras
+
+    const longo = nome.filter((cadaNome) => {
+
+        return cadaNome.length > 4;
+
+    });
+
+    console.log(longo);
+
+
+    // Find
+    // Procura número menor que 28
+
+    const menor = numero.find((n) => n < 28);
+
+    console.log(menor);
+
+
+
+    // Lenght
+
+    console.log(nome.length);
+
+
+    // Splice
+
+    // adiciona
+    nome.splice(1, 0, "João");
+
+    // remove
+    nome.splice(3, 2);
+
+    // substitui
+    nome.splice(5, 1, "Lindelma");
+
+
+    document.write("Total: " + total + "<br><br>");
+
+    document.write(nome.join(", "));
+
+    document.write("<hr>");
+
+
+    // Objeto Aluno
+
+    var alunos = [
+
+        {
+            nome: "Sara",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Cida",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Caua",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Eloa",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Dasmim",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Israel",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Carla",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Joana",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Carolina",
+            curso: "Infor"
+        },
+
+        {
+            nome: "Samanta",
+            curso: "Infor"
+        }
+
+    ];
+
+    alunos.forEach((cadaAluno) => {
+
+        document.write(
+            "<br>" +
+            cadaAluno.nome +
+            " - " +
+            cadaAluno.curso +
+            "<br>"
+        );
+    });
+
+    console.log(alunos);
+
+</script>
+
+</body>
+</html>
